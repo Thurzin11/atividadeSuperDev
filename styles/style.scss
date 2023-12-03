@@ -85,19 +85,28 @@ header{
 }
 .principal{
     display: flex;
+    .second{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
 }
+
 .nav-exer{
     background-color: $cor-nav;
     display: flex;
     flex-direction: column;
     height: 650px;
-    div{
+    button{
+        border: none;
         margin-top: $m-md;
-        padding: $p-sm;
+        padding: 10px;
         background-color: $cor-nav-item;
-        a{
-            padding: $p-lg;
-        }
+        color: $cor-texto;
+        cursor: pointer;
+        text-align: start;
+        width: 100%;
     }
 }
 .conteudo-exer{

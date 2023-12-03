@@ -94,6 +94,12 @@ header {
 .principal {
   display: flex;
 }
+.principal .second {
+  display: none;
+}
+.principal .third {
+  display: none;
+}
 
 .nav-exer {
   background-color: #0D4504;
@@ -101,13 +107,15 @@ header {
   flex-direction: column;
   height: 650px;
 }
-.nav-exer div {
+.nav-exer button {
+  border: none;
   margin-top: 8px;
-  padding: 4px;
+  padding: 10px;
   background-color: #2F6306;
-}
-.nav-exer div a {
-  padding: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: start;
+  width: 100%;
 }
 
 .conteudo-exer {
