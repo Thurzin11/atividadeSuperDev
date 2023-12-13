@@ -1,25 +1,35 @@
-const btn1 = document.querySelector('#exer1');
-const btn2 = document.querySelector('#exer2');
-const btn3 = document.querySelector('#exer3');
-const s1 = document.querySelector('.first');
-const s2 = document.querySelector('.second');
-const s3 = document.querySelector('.third');
+
+const user = [
+        {
+                login: 'arthur',
+                senha: '2935'
+        },
+        {
+                login: 'jonathan',
+                senha: 'gostoso'
+        }
+]
 
 
-btn1.addEventListener('click', ()=>{
-        s1.style.display = 'flex';
-        s2.style.display = 'none';
-        s3.style.display = 'none';
+const btnLogin = document.querySelector('#botaoLogin');
+const login = document.querySelector('#login');
+const password = document.querySelector('#password');
+
+
+btnLogin.addEventListener('click', ()=>{
+        verificarUser();
 });
 
-btn2.addEventListener('click', ()=>{
-    s1.style.display = 'none';
-    s2.style.display = 'flex';
-    s3.style.display = 'none';
-});
-
-btn3.addEventListener('click', ()=>{
-        s2.style.display = 'none';
-        s1.style.display = 'none';
-        s3.style.display = 'flex';
-});
+function verificarUser(){
+        let contador = 0;
+        user.forEach((cont) => {
+                if(cont.login == login.value && cont.senha == password.value){
+                        alert('Login feito');
+                        window.location.href = "index.html"
+                        contador++;
+                }
+        });
+        if(contador == 0){
+                alert('O login falhou')
+        }
+}
