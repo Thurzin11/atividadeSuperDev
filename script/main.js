@@ -25,7 +25,7 @@ function verificarUser(){
         user.forEach((cont) => {
                 if(cont.login == login.value && cont.senha == password.value){
                         alert('Login feito');
-                        window.location.href = "index.html"
+                        window.location.href = "main.html"
                         contador++;
                 }
         });
