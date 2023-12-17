@@ -33,31 +33,32 @@
   justify-content: center;
   flex-direction: column;
 }
-.login div {
+.login .inpt {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 10px;
 }
-.login div label {
+.login .inpt label {
   padding-bottom: 10px;
   color: #fff;
 }
-.login div input {
+.login .inpt input {
   border-radius: 10px;
   background-color: #363A3D;
   width: 498px;
   height: 60px;
   border: none;
   padding: 0px 20px;
+  color: #fff;
 }
-.login div input::-moz-placeholder {
+.login .inpt input::-moz-placeholder {
   color: #A2A2A2;
 }
-.login div input::placeholder {
+.login .inpt input::placeholder {
   color: #A2A2A2;
 }
-.login div button {
+.login .inpt button {
   margin-top: 30px;
   background-color: #E07D0A;
   border: none;
@@ -65,4 +66,27 @@
   color: #fff;
   width: 498px;
   height: 60px;
+  cursor: pointer;
+}
+
+.eye-closed {
+  display: none;
+  background-color: #363A3D;
+  color: #fff;
+  position: absolute;
+  right: 310px;
+  cursor: pointer;
+}
+
+.eye-open {
+  background-color: #363A3D;
+  color: #fff;
+  position: absolute;
+  right: 310px;
+  cursor: pointer;
+}
+
+.password {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=login.css.map */

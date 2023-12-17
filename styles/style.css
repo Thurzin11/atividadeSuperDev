@@ -79,13 +79,17 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.logout a {
+.logout button {
   margin-right: 20px;
   align-items: center;
   color: #FFFFFF;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+  background-color: #414041;
+  border: none;
+  width: 50px;
+  cursor: pointer;
 }
 .logout img {
   margin-left: 8px;
@@ -135,8 +139,60 @@ header {
 .conteudo-exer .reposta-exer {
   border: 1px solid #0D4504;
   border-radius: 5px;
-  height: 425px;
+  height: 70%;
   margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.conteudo-exer .reposta-exer .questao {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #2F6306;
+  border-radius: 10px;
+}
+.conteudo-exer .reposta-exer .questao .resposta-second button {
+  background-color: #E07D0A;
+  color: #fff;
+  border: none;
+  width: 100px;
+}
+.conteudo-exer .reposta-exer .questao input {
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.conteudo-exer .reposta-exer .questao p {
+  margin-top: 20px;
+}
+.conteudo-exer .reposta-exer .questao label {
+  margin-top: 15px;
+}
+.conteudo-exer .reposta-exer .reposta {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2F6306;
+}
+.conteudo-exer .reposta-exer .reposta button {
+  background-color: #E07D0A;
+  color: #fff;
+  border: none;
+  width: 50px;
+}
+.conteudo-exer .reposta-exer .resultado {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2F6306;
+  color: #fff;
+  border-radius: 10px;
 }
 .conteudo-exer div {
   margin: 20px;
@@ -168,4 +224,10 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+}
+
+.questaoDois {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

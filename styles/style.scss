@@ -71,13 +71,17 @@ header{
 .logout{
     display: flex;
     justify-content: space-between;
-    a{
+    button{
             margin-right: $m-xlg;
             align-items: center;
             color: $cor-texto;
             text-decoration: none;
             display: flex;
             justify-content: space-between;
+            background-color: $cor-fundo-header;
+            border: none;
+            width: 50px;
+            cursor: pointer;
         }
         img{
             margin-left: $m-md;
@@ -125,8 +129,62 @@ header{
     .reposta-exer{
         border: 1px solid $cor-nav;
         border-radius: 5px;
-        height: 425px;
+        height: 70%;
         margin-left: 15px;
+        display: flex;
+        align-items: center;
+        .questao{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            background-color: #2F6306;
+            border-radius: 10px;
+            .resposta-second{
+                button{
+                    background-color: #E07D0A;
+                color: #fff;
+                border: none;
+                width: 100px;
+                }
+            }
+            input{
+                width: 50%;
+                border-radius: 10px;
+                border: none;
+                padding: 5px;
+            }
+            p{
+                margin-top: 20px;
+            }
+            label{
+                margin-top: 15px;
+            }
+        }
+        .reposta{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #2F6306;
+            button{
+                background-color: #E07D0A;
+                color: #fff;
+                border: none;
+                width: 50px;
+            }
+        }
+        .resultado{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2F6306;
+            color: #fff;
+            border-radius: 10px;
+        }
     }
     div{
         margin: $m-xlg;
@@ -157,4 +215,9 @@ footer{
         justify-content: space-between;
         padding: 50px;
     }
+}
+.questaoDois{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

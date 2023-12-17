@@ -16,27 +16,27 @@
         </div>
         <div class="subtitulo-header">
             <div class="nome">
-                <a href="">Guilherme Araújo</a>
+                <a href="" id="nomeUser">Arthur Santos Gonçalves</a>
             </div>
             <div class="icone-user">
                 <a href="">
                     <img src="img/Ellipse 2.png" alt="icone-user">
                 </a>
             </div>
-            <div class="logout">
-                <a href="">Sair
+            <div class="logout" id="logout">
+                <button>Sair
                     <img src="img/🦆 icon _logout_.png" alt="icone-logout">
-                </a>
+                </button>
             </div>
         </div>
     </header>
     <main class="principal">
         <nav class="nav-exer col-sm">
             <div>
-                <button id="exer1">Exercício XYZ</button>
+                <button id="exer1">Calculadora Basica</button>
             </div>
             <div>
-                <button id="exer2">Exercício ZYX</button>
+                <button id="exer2">Exercicio Piramide</button>
             </div>
             <div>
                 <button id="exer3">Exercício YXZ</button>
@@ -44,28 +44,55 @@
         </nav>
         <section class="conteudo-exer col-xlg first">
             <div class="nome-titulo">
-                <h2>Exercício XYZ</h2>
+                <h2>Calculadora Basica</h2>
             </div>
             <div class="titulo-exer">
-                <p>Exercicio 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat praesentium sequi at? Nulla atque,
-                    temporibus debitis fugiat adipisci iure voluptas aspernatur facere numquam unde omnis dignissimos a
-                    maiores quibusdam iusto nostrum, rerum ipsum. Quis deserunt dolorem dolorum corrupti, molestiae
-                    reprehenderit impedit nobis eligendi nostrum excepturi. Nesciunt quae odio sunt officiis.</p>
+                <p>Calculadora simples, somente com as operacoes basicas</p>
             </div>
-            <div class="reposta-exer"></div>
+            <div class="reposta-exer">
+                <div class="questao">
+                    <label for="numA">Primeiro número</label>
+                    <input type="number" id="numA">
+
+                    <label for="numB">Segundo número</label>
+                    <input type="number" id="numB">
+
+                    <p>Escolha a operação</p>
+
+                    <div class="reposta">
+                        <button onclick="executarOperacao(somar)">+</button>
+                        <button onclick="executarOperacao(subtrair)">-</button>
+                        <button onclick="executarOperacao(multiplicar)">*</button>
+                        <button onclick="executarOperacao(dividir)">/</button>
+                    </div>
+                </div>
+                <div id="resultado" class="resultado">
+
+                </div>
+            </div>
         </section>
 
         <section class="conteudo-exer col-xlg second">
             <div class="nome-titulo">
-                <h2>Exercício ZYX</h2>
+                <h2>Exercício Piramide Asterisco</h2>
             </div>
             <div class="titulo-exer">
-                <p> Exercicio 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat praesentium sequi at? Nulla atque,
-                    temporibus debitis fugiat adipisci iure voluptas aspernatur facere numquam unde omnis dignissimos a
-                    maiores quibusdam iusto nostrum, rerum ipsum. Quis deserunt dolorem dolorum corrupti, molestiae
-                    reprehenderit impedit nobis eligendi nostrum excepturi. Nesciunt quae odio sunt officiis.</p>
+                <p>Piramide de Asterisco</p>
             </div>
-            <div class="reposta-exer"></div>
+            <div class="reposta-exer">
+                <div class="questao questaoDois">
+                    <label for="pergunta-asterisco">Informe o tamanho da Piramide</label>
+                    <input type="number" id="pergunta-asterisco">
+
+                    <div class="resposta-second">
+                        <button id="gerarPiramide">Gerar Piramide</button>
+                    </div>
+                </div>
+                <div class="resultado" id="resultadoDois">
+
+                </div>
+
+            </div>
         </section>
 
         <section class="conteudo-exer col-xlg third">
@@ -73,7 +100,8 @@
                 <h2>Exercício YXZ</h2>
             </div>
             <div class="titulo-exer">
-                <p> Exercicio 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat praesentium sequi at? Nulla atque,
+                <p> Exercicio 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat praesentium sequi at?
+                    Nulla atque,
                     temporibus debitis fugiat adipisci iure voluptas aspernatur facere numquam unde omnis dignissimos a
                     maiores quibusdam iusto nostrum, rerum ipsum. Quis deserunt dolorem dolorum corrupti, molestiae
                     reprehenderit impedit nobis eligendi nostrum excepturi. Nesciunt quae odio sunt officiis.</p>
